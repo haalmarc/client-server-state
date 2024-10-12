@@ -57,6 +57,21 @@ export function ProfileForm() {
 ```ts {all}
 import { useQuery } from "@tanstack/react-query";
 
+export function ProfileForm() {
+  const [email, setEmail] = useState("");
+
+  const { data, error, isLoading } = useQuery({
+    queryKey: ["userCount"],
+    queryFn: fetchUserCount,
+  });
+
+  return (
+
+  );
+}
+```
+
+```ts {1-7,12-15}
 async function fetchUserCount() {
   const response = await fetch('https://api.example.com/user-count');
   if (!response.ok) {
@@ -88,12 +103,8 @@ Hva skjer om vi bytter ut vår custom kode med et verktøy som TanStack Query?
 
 Altså, fikk dere også en sånn god følelse i kroppen nå?
 
-Akkurat for servertilstand, er det veldig vanlig å bruke TanStack Query (eller useSWR, som gjør mye av det samme). 
+Akkurat for servertilstand, er det veldig vanlig å bruke TanStack Query, og dere skjønner kanskje hvorfor? Vi får mye funksjonalitet ut av boksen, som loading og error i egne tilstander.
 
-TanStack Query gjør ikke datahenting. Dere ser vi har definert en fetcher. Men dataene som blir hentet, håndterer den i en tilstand.
-
-Denne tilstanden er lagret på en cache-key. Dermed, om vi henter dataene fra et annet sted i appen, kan vi bruke den cachede dataen. 
-
-Vi ser også at vi får egne tilstander for isLoading og error out of the box, uten at vi trenger å ha egen useState for dem. Det forenkler koden.
+Også okay da, jeg skal gjøre bildet litt ærligere, med litt mer kode. TanStack Query gjør ikke datahenting. For det har vi definert en fetcher. Men dataene som blir hentet, håndterer TanStack Query i en egen tilstand, lagret på cache-nøkkelen. Dermed, om vi henter dataene fra et annet sted i appen, kan vi bruke den cachede dataen. 
 
 -->
