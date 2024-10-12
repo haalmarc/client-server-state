@@ -196,7 +196,7 @@ export function ProfileForm() {
 <!--
 Her ser vi et enkelt skjema der du kan opprette en bruker og følge med på antall brukere som er lagd.
 
-Det er også enkel kode her. Vi har en useState for å holde rede på tilstanden når brukeren skriver. Så når brukeren skriver, oppdateres skjemafeltet seg med en gang.
+Det er ganske enkel kode, det her. Vi har en useState for å holde rede på tilstanden når brukeren skriver. Så når brukeren skriver, oppdateres skjemafeltet seg med en gang.
 
 Vi har også en annen tilstand, for å vise antall brukere. Denne starter som null, men etter henting av data i en useEffect, blir den satt til en verdi. Også denne er med useState.
 
@@ -209,5 +209,6 @@ Også ønsker vi ikke å belaste servern hvis komponente unmounter, så vi legge
 
 Også kan det jo hende at fetchen feiler av en obskur grunn, så vi vil retry-e først vi gir opp.
 
-Det er med andre ord ganske stor forskjell på tilstanden for å skjemafeltet og tilstanden for å holde rede på antall brukere. De er helt forskjellige typer tilstander. Den ene er klient-tilstand, som er eid av brukeren. Mens den andre er server-tilstand, som er eid av serveren. Å forstå forskjellene hjelper oss å forstå kompleksiteten på de ulike tilstandene, og hvilke muligheter de gir. La oss se nærmere på forskjellene. 
+Det er med andre ord ganske stor forskjell på tilstanden for å skjemafeltet og tilstanden for å holde rede på antall brukere. De er helt forskjellige typer tilstander. Den ene henter data som er umiddelbart tilgjengelig fra brukeren. Mens den andre henter data fra en server potensielt langt borte fra brukeren. Det er har konsekvenser, og fører med seg både kompleksitet og muligheter. 
+
 -->
