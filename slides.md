@@ -52,6 +52,79 @@ The last comment block of each slide will be treated as slide notes. It will be 
 transition: fade-out
 ---
 
+---
+transition: fade-out
+---
+
+<!--
+Eksempel på notes for usestate
+-->
+
+---
+transition: fade-out
+---
+
+<!--
+Eksempel på notes for usesta
+-->
+
+---
+transition: fade-out
+---
+
+<!--
+Eksempel på notes for use
+-->
+
+---
+transition: fade-out
+---
+
+<!--
+Eksempel på notes fo
+-->
+
+---
+transition: fade-out
+---
+
+<!--
+Eksempel på no
+-->
+
+---
+transition: fade-out
+---
+
+<!--
+Eksempel
+-->
+
+---
+transition: fade-out
+---
+
+<!--
+Eksem
+-->
+
+---
+transition: fade-out
+---
+
+<!--
+E
+-->
+
+---
+src: ./pages/basic-useeffect.md
+hide: false
+---
+
+---
+transition: fade-out
+---
+
 # What is Slidev?
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features

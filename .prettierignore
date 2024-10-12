@@ -1,0 +1,2 @@
+# Ignoring *.md to avoid destroying layout:
+*.md
