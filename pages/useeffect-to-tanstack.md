@@ -3,7 +3,7 @@ layout: two-cols
 layoutClass: gap-16
 ---
 
-# Du MÅ ikke skille tilstandene
+# Du klarer deg med en hammer...
 
 <Formexample />
 
@@ -105,6 +105,6 @@ Altså, fikk dere også en sånn god følelse i kroppen nå?
 
 Akkurat for servertilstand, er det veldig vanlig å bruke TanStack Query, og dere skjønner kanskje hvorfor? Vi får mye funksjonalitet ut av boksen, som loading og error i egne tilstander.
 
-Også okay da, jeg skal gjøre bildet litt ærligere, med litt mer kode. TanStack Query gjør ikke datahenting. For det har vi definert en fetcher. Men dataene som blir hentet, håndterer TanStack Query i en egen tilstand, lagret på cache-nøkkelen. Dermed, om vi henter dataene fra et annet sted i appen, kan vi bruke den cachede dataen. 
+Også okay da, jeg skal gjøre bildet litt ærligere, med litt mer kode. TanStack Query gjør ikke datahenting. For det har vi definert en fetcher. Men dataene som blir hentet, håndterer TanStack Query i en egen tilstand, lagret på cache-nøkkelen. Dermed, om vi henter dataene fra et annet sted i appen, kan vi bruke den cachede dataen.
 
 -->
