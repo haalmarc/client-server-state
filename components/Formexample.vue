@@ -21,7 +21,15 @@ const handleSubmit = (event: Event) => {
         E-post:
         <input v-model="email" border />
       </label>
-      <button type="submit" border bg="gray-100" mt="1" pl="1" pr="1">
+      <button
+        type="submit"
+        border
+        bg="gray-300"
+        text="black"
+        mt="1"
+        pl="1"
+        pr="1"
+      >
         Opprett bruker
       </button>
     </form>
