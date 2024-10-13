@@ -38,6 +38,9 @@ src: ./pages/useeffect-to-tanstack.md
 src: ./pages/about-sync.md
 ---
 
+---
+src: ./pages/sync-mutation.md
+---
 
 # What is Slidev?
 
