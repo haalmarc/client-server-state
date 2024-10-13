@@ -101,10 +101,12 @@ Skillet mellom klient- og server-tilstand fører ikke til at du MÅ bruke visse 
 
 Hva skjer om vi bytter ut vår custom kode med et verktøy som TanStack Query?
 
-Altså, fikk dere også en sånn god følelse i kroppen nå?
+[click] Altså, fikk dere også en sånn god følelse i kroppen nå?
 
 Akkurat for servertilstand, er det veldig vanlig å bruke TanStack Query, og dere skjønner kanskje hvorfor? Vi får mye funksjonalitet ut av boksen, som loading og error i egne tilstander.
 
-Også okay da, jeg skal gjøre bildet litt ærligere, med litt mer kode. TanStack Query gjør ikke datahenting. For det har vi definert en fetcher. Men dataene som blir hentet, håndterer TanStack Query i en egen tilstand, lagret på cache-nøkkelen. Dermed, om vi henter dataene fra et annet sted i appen, kan vi bruke den cachede dataen.
+Også okay da, jeg skal gjøre bildet litt ærligere, med litt mer kode. TanStack Query gjør ikke datahenting. 
+
+[click] For det har vi definert en fetcher. Men dataene som blir hentet, håndterer TanStack Query i en egen tilstand, lagret på cache-nøkkelen. Dermed, om vi henter dataene fra et annet sted i appen, kan vi bruke den cachede dataen.
 
 -->
