@@ -1,3 +1,7 @@
+---
+transition: fade
+---
+
 # Klient- vs server-tilstand
 
 | Klient | Server |
@@ -18,6 +22,9 @@ La oss se nærmere på forskjellene.
 Alle disse 4 faktorene gjør klient-tilstanden lett å jobbe med. Det er kun du som kan endre noe, så få ting kan gå galt.
 
 -->
+
+---
+transition: fade
 ---
 
 # Klient- vs server-tilstand
