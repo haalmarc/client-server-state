@@ -34,6 +34,10 @@ src: ./pages/differences-state.md
 src: ./pages/useeffect-to-tanstack.md
 ---
 
+---
+src: ./pages/about-sync.md
+---
+
 
 # What is Slidev?
 

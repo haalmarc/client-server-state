@@ -16,3 +16,8 @@ Ved presentasjon, åpne localhost:3030 i to faner.
 I den ene fanen skriver du presenter, e.g. http://localhost:3030/presenter. 
 
 Da vil du kunne se notater i ett vindu, mens det andre synces idet du bytter faner.
+
+# Tips
+
+Når du legger til ny fil du vil importere i slides.md, start terminalen på nytt. For ellers vil det kræsje.
+
