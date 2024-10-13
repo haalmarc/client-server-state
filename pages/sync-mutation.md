@@ -76,4 +76,6 @@ Akkurat nå lager vi en ny bruker, men det er ingenting her som sier at vi skal 
 
 (demonstrer: skriv inn og trykk opprett bruker)
 
+Dette er jo fremgang! Vi får synca servertilstanden idet brukeren gjør en handling. Men syns ikke dere det tok litt lang tid? Kjedelig å trykke "opprett", så går du for en kaffepause mens den jobber. Kan vi forbedre dette?
+
 -->

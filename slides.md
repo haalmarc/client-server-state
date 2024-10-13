@@ -42,6 +42,10 @@ src: ./pages/about-sync.md
 src: ./pages/sync-mutation.md
 ---
 
+---
+src: ./pages/optimistic-mutation.md
+---
+
 # What is Slidev?
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features
