@@ -19,6 +19,23 @@ Da vil du kunne se notater i ett vindu, mens det andre synces idet du bytter fan
 
 Husk også å aktivere dark-mode i visningen.
 
+## Mobil som fjernkontroll
+
+- Sjekk IP på nettverk på Mac: 
+  - WiFi -> Detaljer -> IP-adresse
+- Kjør kommando for å tillate remote access (kan utelate passord):
+  - pnpm dev --remote=passord
+  - Her får du også URL-er du skal besøke på laptop eller mobil
+- Besøk URL public slide show for laptop.
+- Besøk remote control URL tilsvarende IP-en din på nettleser på telefon.
+
+OBS. Noen begrensninger med mobil som fjernkontroll, så her er noen tips:
+
+- For neste slide, sveip inni "Current"-vindu. Pil-knappene frem og tilbake er veldig små, så lett å trykke feil, som tar deg ut av kontroll.
+- Sveip 4 sekunder før du egentlig vil bytte slide. Presentasjonen ser ut til å jevnt svare, men det kan ta litt tid.
+- Av samme grunn, kun sveip én gang. Ellers hoper det seg hopp, og du hopper over mange slides.
+- Om du ønsker å vise interaksjon med komponenter, må du bruke laptop. Tasting og trykking på komponenter ser ikke ut til å fungere på mobil. Det blir vist i mobilen, men ikke i presentasjonen. 
+
 # Tips
 
 - Start nytt sli.dev prosjekt og initier git. Siden du kan gjøre endringer i både IDE-en og i presentasjonen, er det lett å gjøre endringer du ikke ønsker og som kan tulle til formatering. Det kan du enkelt legge merke til og reverte med git.
