@@ -6,8 +6,6 @@ const userCount = ref(10);
 
 const handleSubmit = (event: Event) => {
   event.preventDefault();
-  console.log("Opprett bruker med e-post:", email.value);
-  alert("Opprettet bruker: " + email.value);
 };
 </script>
 

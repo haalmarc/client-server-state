@@ -2,12 +2,15 @@
 import { ref } from "vue";
 
 const email = ref("");
+const errorMessage = ref("");
 const userCount = ref(10);
 const loading = ref(false);
+const shouldSucceed = ref(true);
 const previousUserCount = ref<number | null>(null);
 
 const handleSubmit = (event: Event) => {
   event.preventDefault();
+  errorMessage.value = "";
 
   // Simulerer optimistisk oppdatering ved umiddelbart å øke brukertallet
   previousUserCount.value = userCount.value;
@@ -15,12 +18,11 @@ const handleSubmit = (event: Event) => {
   loading.value = true;
 
   setTimeout(() => {
-    const errorRate = 0.4;
-    const success = Math.random() > errorRate;
-    if (!success) {
+    if (!shouldSucceed.value) {
       userCount.value = previousUserCount.value;
-      alert("En feil skjedde. Ruller tilbake.");
+      errorMessage.value = "En feil skjedde.";
     }
+    shouldSucceed.value = !shouldSucceed.value;
     loading.value = false;
   }, 3000);
 };
@@ -49,6 +51,7 @@ const handleSubmit = (event: Event) => {
       >
         {{ loading ? "Laster..." : "Opprett bruker" }}
       </button>
+      <p>{{ errorMessage }}</p>
     </form>
   </div>
 </template>
