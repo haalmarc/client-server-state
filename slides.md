@@ -62,6 +62,10 @@ src: ./pages/local-global-code.md
 src: ./pages/state-tools.md
 ---
 
+---
+src: ./pages/redux.md
+---
+
 # What is Slidev?
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features

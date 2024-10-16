@@ -42,7 +42,7 @@ export function ProfileForm() {
 }
 ```
 
-```ts {3,6|12,14,15,18}
+```ts {1,3,6|12,14,15,18}
 export function ProfileForm() {
   ...
   const { isDarkMode, setIsDarkMode } = useContext(DarkModeContext);
@@ -67,7 +67,7 @@ export const DarkModeProvider: React.FC = ({ children }) => {
 };
 ```
 
-```ts {3|12,14-15,19-21}
+```ts {3,12,14-15,19-21}
 export function ProfileForm() {
   ...
   const { userCount } = useContext(UserCountContext);
@@ -194,9 +194,11 @@ Tilbake til det første kode-eksempelet vi så, hvilken del av denne koden er lo
 
 [click] En React context er altså et sted vi definerer en tilstand, som vi kan konsumere flere steder i applikasjonen.
 
-[click] Når det gjelder hentingen av data, så kunne vi også ha hentet data én gang, og lagt den tilgjengelig i en contextprovider for å gjøre den global.
+[click] Når det gjelder hentingen av antall brukere, så kunne vi gjort gjort den global ved å putte den i en contextprovider.
 
-[click] Men da kommer vi tilbake igjen med problemet vi først snakket om - det er mange hensyn å ta ved denne måten å hente asynkron data.
+Men da kommer vi tilbake igjen med problemet vi først snakket om.
+
+[click] det er mange hensyn å ta ved denne måten å hente asynkron data.
 
 [click] Så hva gjør vi?
 
