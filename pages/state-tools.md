@@ -8,6 +8,7 @@ transition: fade
 - useRef
 - useContext
 - useReducer
+- URL-parameter
 - Redux
 - Zustand
 - MobX
@@ -18,7 +19,9 @@ transition: fade
 <!--
 Det finnes en del verktøy for tilstand. 
 
-De fire første her kommer med React ut fra boksen, mens resten er eksterne.
+De fem første her kommer med React ut fra boksen, mens resten er eksterne.
+
+React har altså ingen innebygde verktøy for server-tilstand.
 
 -->
 ---
@@ -27,20 +30,16 @@ De fire første her kommer med React ut fra boksen, mens resten er eksterne.
 
 |     | Klient          | Server            |
 | --- | --------------- | ----------------- |
-| Lokal | useState<br/>useRef   | TanStack Query<br/>useSWR |
-| Global | useContext<br/>useReducer<br/>Redux<br/>Zustand<br/>MobX<br/>Jotai | TanStack Query<br/>useSWR |
+| Lokal | useState<br/>useRef |  |
+| Global | useContext<br/>useReducer<br/>URL-parameter<br/>Redux<br/>Zustand<br/>MobX<br/>Jotai | TanStack Query<br/>useSWR |
 
 <!--
-Verktøyene er beregnet for ulike tilstander. Du har useState og useRef som er for lokal klienttilstand, 
+Verktøyene er beregnet for ulike tilstander, så du må velge fra riktig gruppe av verktøyer.
+
+Du har useState og useRef som er for lokal klienttilstand, 
 
 en drøss med verktøy for global klient-tilstand, også har du hvert fall to populære verktøy for å håndtere servertilstand.
 
-Så hvordan velger du blant disse verktøyene? 
-
-Om du driver med asynkron data, altså en forespørsel til noe eksternt, bruker du et verktøy for servertilstand. 
-
-Om du driver med tilstand som klienten har kontroll over, start med en lokal useState. Om du trenger å ha global state, kommer du langt med Reacts context eller useReducer. 
-
-Jeg tror overbruken av verktøy for global klient-tilstand henger igjen fra da folk brukte det til også servertilstand, men nå fins det enklere, bedre verktøy. 
+Jeg tror overbruken av verktøy for global klient-tilstand henger igjen fra da folk brukte det til også servertilstand. 
 
 -->
