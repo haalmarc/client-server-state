@@ -35,23 +35,6 @@ transition: fade
 |     | Klient          | Server            |
 | --- | --------------- | ----------------- |
 | Lokal |   |  |
-| Global |  | TanStack Query<br/>useSWR<br/>React Server Components (Nextjs)<br/>useLoaderData (Remix)|
-
-<!--
-
-Du har også nå rammeverk som Next og Remix som har andre måter å hente data på. Dette er server-først rammeverk, hvor du henter data før komponenten er rendret. Selv om dette er annerledes, så kan du anse det som enda et verktøy innen server-tilstand. Du henter data fra serveren, og har mulighet til å revalidere, lignende som vi har sett med TanStack Query.
-
--->
-
----
-transition: fade
----
-
-# Verktøy for tilstand
-
-|     | Klient          | Server            |
-| --- | --------------- | ----------------- |
-| Lokal |   |  |
 | Global |  |  |
 
 <!--
