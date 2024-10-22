@@ -4,25 +4,29 @@ transition: fade
 
 # Verktøy for tilstand
 
-<v-click hide>
-
 ![](../images/dan_abramov_redux.png){width=500px lazy}
-
-</v-click>
-
-<v-after>
-
-![](../images/josh_beat_saber_edit.gif){width=500px lazy}
-
-</v-after>
 
 <!--
 
 Siden Redux har vært så populært, vil jeg trekke det frem. Men du skal sjeldent trenge Redux, med all dens kompleksitet. Selv Dan Abramov, som var en av skaperne av Redux, sier han sliter med å finne usecases for det.
 
-[click] Så kommer Josh Comeau og lager dette sjuke redigeringsprogrammet for beat-saber, med nettopp Redux. 
+-->
+
+---
+transition: fade
+---
+
+# Verktøy for tilstand
+
+![](../images/josh_beat_saber_edit.gif){width=500px lazy}
+
+<!--
+
+Så kommer Josh Comeau og lager dette sjuke redigeringsprogrammet for beat-saber, med nettopp Redux. 
 
 Comeaus poeng er at Redux kan passe bra på klient-tunge applikasjoner. Men det fins få applikasjoner som er så klient-tunge som dette. Typisk er det redigeringsprogram som dette.
+
+Han deler opp i applikasjoner som krever mye klient-tilstand som redigeringsprogram, de som krever mest server-tilstand som dashboard og de som i det hele tatt har lite tilstand som en blogg.
 
 -->
 
