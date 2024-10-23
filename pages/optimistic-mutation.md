@@ -26,9 +26,9 @@ layoutClass: gap-16
 
 Så servertilstanden er asynkron. Vi må vente på at forespørselen vår går fra klienten, gjør noe på serveren, og så får vi tilbake et svar. Men for å gjøre brukeropplevelsen snappy, kan vi bruke optimistisk oppdatering.
 
-Istedenfor å vente på at forespørselen fullføres, oppdaterer vi klientens servertilstand, før vi får bekreftelse på at forespørselen er vellykket. Optimistiske oppdateringer er ikke noe magisk, men et mønster, som består av 3 steg:
+Det består av 3 steg:
 
-[click] Server-tilstanden endres umiddelbart, for å vise endring til brukeren. Husk også gammel tilstand, tilfelle feil skjer og tilstand rulles tilbake
+[click] Server-tilstanden i klienten endres umiddelbart, for å vise endring til brukeren. Husk også gammel tilstand, tilfelle feil skjer og tilstand rulles tilbake
 
 [click] Et kall gjøres til serveren for å lagre tilstand til server
 
