@@ -26,11 +26,11 @@ I en klient-rendret React-applikasjon
 
 Før vi går i gang ... **Avstemning**.
 
-Tilstandshåndtering i frontend er noe av det **vanskeligste vi gjør**. Du skal håndtere tilstander for alt fra skjemafelter og darkmode til innlogging og andre API-data. Og du skal håndtere alt dette med forståelig kode, samtidig som du gir en god brukeropplevelse. 
+Tilstandshåndtering i frontend er noe av det **vanskeligste vi gjør**. Du skal håndtere tilstander for alt fra skjemafelter og darkmode til innlogging og andre API-data. 
 
-Jeg tror mye av kaoset rundt tilstandshåndtering har vært på grunn av en **misforståelse** rundt tilstandstyper. Vi har behandlet helt ulike tilstander som om de var de samme. Og det har skapt unødvendig mye kode og dårligere brukeropplevelser.
+Jeg tror mye av kaoset rundt tilstandshåndtering har vært på grunn av en **misforståelse** rundt tilstandstyper. Vi har behandlet helt ulike tilstander som om de var de samme. Og det har skapt unødvendig mye kode og dårligere brukeropplevelser og dårligere ytelse.
 
-Som dere ser fra taglinen, så blir fokuset i dag på tilstander i en **klient-rendret applikasjon**. Altså hvor du rendrer applikasjonen, så begynner datahentingen å skje. Noen av konseptene vil også være relevante for server-rendret applikasjon, men vi vil altså se på verktøy som gjelder en klient-rendret applikasjon. 
+Som dere ser fra taglinen, så blir fokuset i dag på tilstander i en **klient-rendret applikasjon**. Altså hvor du rendrer applikasjonen, så begynner datahentingen å skje. Konseptene vil også være relevante for server-rendret applikasjon, det er altså et litt annet beist. 
 
 -->
 
