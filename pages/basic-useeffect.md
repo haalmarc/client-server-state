@@ -198,6 +198,8 @@ Her ser vi et enkelt skjema der du kan opprette en bruker og følge med på anta
 
 [click] Det er ganske enkel kode.
 
+(demonstrer: skriv inn test@test.no for å vise at feltet har en tilstand som oppdateres umiddelbart)
+
 [click] Vi har en useState for å holde rede på tilstanden når brukeren skriver. Så når brukeren skriver, oppdateres skjemafeltet seg med en gang.
 
 [click] Vi har også en annen tilstand, for å vise antall brukere. Denne starter som null, men etter henting av data i en useEffect, blir den satt til en verdi. Også denne er med useState.

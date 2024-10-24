@@ -74,7 +74,7 @@ Akkurat nå lager vi en ny bruker, men det er ingenting her som sier at vi skal 
 
 [click] Så kan vi om funksjonen vellykkes, invalidere cachen for antall brukere, så vi får nye data. Da vil vi få nytt tall med en gang vi oppretter en bruker. 
 
-(demonstrer: skriv inn og trykk opprett bruker)
+(demonstrer: skriv inn epost test@test.no og trykk opprett)
 
 Dette er jo fremgang! Vi får synca servertilstanden idet brukeren gjør en handling. Men syns ikke dere det tok litt lang tid?
 

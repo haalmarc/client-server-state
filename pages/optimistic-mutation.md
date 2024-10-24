@@ -34,6 +34,6 @@ Det består av 3 steg:
 
 [click] Etter API-kallet fullføres: a) Hvis kallet var vellykket, oppdater klientens server-tilstand med den nye server-tilstanden. b) Hvis kallet feiler, rull tilbake til gammel tilstand
 
-(demonstrer suksess og feil: skriv inn og trykk opprett bruker. 0.4 sjanse for feil)
+(demonstrer suksess og feil: skriv inn epost test@test.no og trykk opprett. Suksess så feil)
 
 -->
