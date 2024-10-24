@@ -6,7 +6,7 @@ transition: fade
 
 |     | Klient | Server |
 | --- | --- | --- |
-| . |   |   |
+|  |   |   |
 
 
 <!-- 
