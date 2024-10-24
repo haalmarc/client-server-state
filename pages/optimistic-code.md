@@ -39,7 +39,7 @@ export function ProfileForm() {
 }
 ```
 
-```ts {2,9|10-12|14-15|17-20}
+```ts {2,9|10-12|14-15|17-21,24}
 export function ProfileForm() {
   const mutation = useMutation({
     mutationFn: createUser,
@@ -56,13 +56,14 @@ export function ProfileForm() {
       const previousUserCount = queryClient
         .getQueryData<number>(["userCount"]);
 
+      // 👇 Steg 1
       queryClient.setQueryData<number>(["userCount"], 
         (previousState) =>
           previousState + 1
       );
 
       return { previousUserCount };
-    },
+    }, // 👈 Steg 2
   });
 
   return (
@@ -71,7 +72,7 @@ export function ProfileForm() {
 }
 ```
 
-```ts {16,18-23}
+```ts {16,18-24}
 export function ProfileForm() {
   const mutation = useMutation({
     onMutate: async (newEmail: string) => {
@@ -89,6 +90,7 @@ export function ProfileForm() {
 
       return { previousUserCount };
     },
+    // 👇 Steg 3b
     onError: (err, newEmail, context) => {
       queryClient.setQueryData<number>(
         ["userCount"],
@@ -103,7 +105,7 @@ export function ProfileForm() {
 }
 ```
 
-```ts {10-14}
+```ts {10-15}
 export function ProfileForm() {
   const mutation = useMutation({
     ...
@@ -113,6 +115,7 @@ export function ProfileForm() {
         context?.previousUserCount
       );
     },
+    // 👇 Steg 3
     onSettled: () => {
       queryClient.invalidateQueries({
         queryKey: ["userCount"] 
@@ -132,7 +135,7 @@ export function ProfileForm() {
 
 <ol>
   <li>Vi endrer server-tilstanden med en gang</li>
-  <li>Vi sender en forespørsel til serveren om å endre tilstand</li>
+  <li>Vi sender en forespørsel til serveren</li>
   <li>Etter forespørselen er fullført: 
     <ul>
       <li>a) hvis suksess: oppdater server-tilstanden med de faktiske dataene</li>
@@ -144,13 +147,13 @@ export function ProfileForm() {
 <!--
 Nå har vi sett på mønsteret hvordan implementerer vi det i kode?
 
-[click] Vi starter med å endre server-tilstanden med en gang. Det gjør vi ved å gå i useMutation og endre på "onMutate"-callbacken, hvor vi kan definere hva som skjer når oppdateringen skjer.
+[click] Det er litt forberedelser før vi får oppdatert servertilstanden. Inni useMutation, er det onMutate-callbacken vi endrer på, for å definere hva som skjer når forespørselen skjer.
 
 [click] Først stopper vi alle pågående forespørsel på userCount, for å unngå race conditions.
 
 [click] Så tar vi vare forrige tilstand, tilfelle vi skal rulle tilbake.
 
-[click] Så oppdaterer vi tilstanden i React Query til å ha gammel tilstand + 1, siden vi legger til en bruker.
+[click] **SÅ** kan vi oppdatere tilstanden i React Query til å ha gammel tilstand + 1, siden vi legger til en bruker.
 
 Så vil forespørselen bli sendt. 
 

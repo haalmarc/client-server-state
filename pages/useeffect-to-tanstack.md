@@ -103,10 +103,14 @@ Hva skjer om vi bytter ut vår egen kode med TanStack Query, som er **beregnet**
 
 [click] Altså, fikk dere også en sånn god følelse i kroppen nå?
 
-TanStack Query er det mest populære verktøyet for servertilstand, og dere skjønner kanskje hvorfor? Vi får mye funksjonalitet ut av boksen, som data, loading og error i egne tilstander. Det er et verktøy vi bruker i klienten, og som håndterer dataflyten mellom klient og server.
+TanStack Query er det mest populære verktøyet for servertilstand, og dere skjønner kanskje hvorfor? Vi får mye funksjonalitet ut av boksen, som data, loading og error i egne tilstander. 
+
+Det er et verktøy vi bruker i klienten, og som håndterer dataflyten mellom klient og server.
 
 Også okay da, jeg skal gjøre bildet litt ærligere, med litt mer kode. TanStack Query gjør ikke selve datahentingen. 
 
-[click] For det har vi definert en fetcher. Og dataene som blir hentet fra serveren, putter TanStack Query i en egen cache på klienten, lagret på en cache-nøkkel. Dermed, om vi henter dataene fra et annet sted i appen, slipper vi å hente dataene på nytt, og kan bruke den cachede dataen.
+[click] For det har vi definert en fetcher, som vi mater inn i useQuery. 
+
+Og dataene som blir hentet fra serveren, putter TanStack Query i en egen cache på klienten, lagret på en cache-nøkkel. Dermed, om vi henter dataene fra et annet sted i appen, slipper vi å hente dataene på nytt, og kan bruke den cachede dataen.
 
 -->

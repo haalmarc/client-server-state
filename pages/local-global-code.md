@@ -67,7 +67,7 @@ export const DarkModeProvider: React.FC = ({ children }) => {
 };
 ```
 
-```ts {3,12,14-15,19-21}
+```ts {3,14-15,19-21}
 export function ProfileForm() {
   ...
   const { userCount } = useContext(UserCountContext);

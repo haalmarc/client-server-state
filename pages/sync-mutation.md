@@ -70,12 +70,14 @@ Men hva med når vi selv gjør endringer?
 
 Akkurat nå lager vi en ny bruker, men det er ingenting her som sier at vi skal hente antall brukere på nytt.
 
-[click] For å få til det, kan vi mate createUser-funksjonen vår inn i useMutate. Det er en hook fra TanStack Query, som tar seg av oppdateringer. Lignende det useQuery gjør for henting av data.
+[click] For å få til det, kan vi mate createUser-funksjonen vår inn i useMutate. Det er den andre halvdelen av useQuery, som tar seg av oppdateringer.
 
 [click] Så kan vi om funksjonen vellykkes, invalidere cachen for antall brukere, så vi får nye data. Da vil vi få nytt tall med en gang vi oppretter en bruker. 
 
 (demonstrer: skriv inn epost test@test.no og trykk opprett)
 
-Dette er jo fremgang! Vi får synca servertilstanden idet brukeren gjør en handling. Men syns ikke dere det tok litt lang tid?
+Dette er jo fremgang! Vi får synca servertilstanden idet brukeren gjør en handling, så brukeren ser at handlingen hadde en effekt. 
+
+Men syns ikke dere det tok litt lang tid?
 
 -->

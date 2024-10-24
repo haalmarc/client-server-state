@@ -13,7 +13,11 @@ transition: fade
 
 Så oppsummert, når dere nå kommer tilbake til deres kode, hvordan velger dere blant disse verktøyene? 
 
-Valget avhenger av typen tilstand du har med å gjøre. Start enkelt og velg riktig gruppe av verktøy.
+Det viktigste er å velge fra riktig gruppe av verktøy, som er avhengig av hvilken tilstand du har med å gjøre.
+
+Henter eller oppdaterer du data som kommer fra serveren, bruk TanStack Query.
+
+Om du ikke håndterer servertilstand, start enkelt med en useState. Og legg til et verktøy for global tilstand når det gjør vondt å prop-drille.
 
 -->
 

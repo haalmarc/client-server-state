@@ -30,17 +30,99 @@ transition: fade
 
 # Verktøy for tilstand
 
-|     | Klient          | Server            |
-| --- | --------------- | ----------------- |
-| Lokal | useState<br/>useRef<br/>useReducer | TanStack Query<br/>useSWR |
-| Global | useContext<br/>URL-parameter<br/>Redux<br/>Zustand<br/>MobX<br/>Jotai | TanStack Query<br/>useSWR |
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Klient</th>
+      <th>Server</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lokal</td>
+      <td>useState<br/>useRef<br/>useReducer</td>
+      <td>TanStack Query<br/>useSWR</td>
+    </tr>
+    <tr>
+      <td>Global</td>
+      <td>useContext<br/>URL-parameter<br/>Redux<br/>Zustand<br/>MobX<br/>Jotai</td>
+      <td>TanStack Query<br/>useSWR</td>
+    </tr>
+  </tbody>
+</table>
 
 <!--
 
+Verktøyene er beregnet for ulike tilstander. Som dere ser fra tabellen, er det veldig mange alternativer for global tilstand. 
 
-Verktøyene er beregnet for ulike tilstander. Som dere ser fra tabellen, er det veldig mange alternativer for global tilstand. Jeg tror årsaken til det er fra da folk brukte disse verktøyene til også servertilstand, og hentet data én gang, for så å dele det ut i applikasjonen. Men som vi har sett, fins det bedre verktøy for det, som har en enklere synkronisering av klient og server.
+Jeg tror årsaken til det er fra da folk brukte disse verktøyene til også servertilstand, og hentet data én gang, for så å dele det ut i applikasjonen. Men som vi har sett, fins det bedre verktøy for det, som har en enklere synkronisering av klient og server.
+
+-->
+
+---
+transition: fade
+---
+
+# Verktøy for tilstand
+
+<table class="second-column-blurred">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Klient</th>
+      <th>Server</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lokal</td>
+      <td>useState<br/>useRef<br/>useReducer</td>
+      <td>TanStack Query<br/>useSWR</td>
+    </tr>
+    <tr>
+      <td>Global</td>
+      <td>useContext<br/>URL-parameter<br/>Redux<br/>Zustand<br/>MobX<br/>Jotai</td>
+      <td>TanStack Query<br/>useSWR</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--
 
 Det letteste skillet er mellom klient- og servertilstand. React kommer ikke med noen innebygde verktøy for asynkron tilstand, så da faller valget lett på TanStack Query eller useSWR.
+
+-->
+
+---
+transition: fade
+---
+
+# Verktøy for tilstand
+
+<table class="third-column-blurred">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Klient</th>
+      <th>Server</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lokal</td>
+      <td>useState<br/>useRef<br/>useReducer</td>
+      <td>TanStack Query<br/>useSWR</td>
+    </tr>
+    <tr>
+      <td>Global</td>
+      <td>useContext<br/>URL-parameter<br/>Redux<br/>Zustand<br/>MobX<br/>Jotai</td>
+      <td>TanStack Query<br/>useSWR</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--
 
 Når vi skal velge verktøy for klient-tilstand, er det fortsatt mange valg.
 
@@ -54,7 +136,7 @@ transition: fade
 
 ````md magic-move {lines: true}
 
-```ts {2}
+```ts {1,2}
 export function Todos() {
   const [tasks, setTasks] = useState(initialTasks);
 
@@ -173,11 +255,15 @@ export function OtherSetterComponent() {
 
 <!-- 
 
-Men vi starter lokalt, så vi beholder kapsuleringen av komponentene. useState er enkelt å starte med. 
+La oss se på et eksempel med oppdatering av todos.
 
-[click] Om du har komplisert tilstand, så kan det være nyttig å ta i bruk useReducer. Denne funksjonen har React-teamet hentet fra Redux, og lar deg skille tilstandsoppdatering mellom hva brukeren gjør, altså en action, og hvordan du oppdaterer tilstanden, altså reduceren. Dette kan gi mer forståelig kode.
+Det er alltid bra å starte lokalt. Da beholder vi kapsuleringen av komponentene, og kan unngå spaghetti-kode. useState er enkelt å starte med. 
 
-[click] I første omgang kan vi holde oss på lokal klient-tilstand og prop-drille, men når vi prop-driller mer enn 3 lag, kan det gjøre vondt. Da er det på tide å bruke et verktøy for global tilstand.
+[click] Om du har komplisert tilstand, så kan det være nyttig å ta i bruk useReducer. 
+
+Denne funksjonen har React-teamet hentet fra Redux, og lar deg skille tilstandsoppdatering mellom hva brukeren gjør, altså en action, og hvordan du oppdaterer tilstanden, altså reduceren. Dette kan gi mer forståelig kode.
+
+[click] I første omgang kan vi holde oss på lokal klient-tilstand og prop-drille, men når vi prop-driller mer enn 3 lag, gjør det vondt. Da er det på tide å bruke et verktøy for global tilstand.
 
 [click] Vi har allerede sett på React Context. Du kan kombinere det med useState eller useReducer, og dermed får vi dekt både lokal og global klient-tilstand med innebygde verktøy.
 
@@ -189,6 +275,6 @@ Noen av verktøyene vi har sett på prøver å løse dette. Jeg skal ikke gå gj
 
 [click] Zustand er et av verktøyene som løser dette, med et enklere API enn Redux. Her definerer du en hook, hvor vi definerer initiell data og hvordan vi oppdaterer den.
 
-[click] Så kan vi ta i bruk dataene og setteren i komponentene, uten at alt re-rendres ved endringer komponenten ikke bryr seg om.
+[click] Så kan vi velge hva fra global tilstand vi vil følge med på, enten det er kun data eller kun setter. Da vil komponenten bare re-rendre når noe vi bryr oss om endrer seg.
 
 -->
