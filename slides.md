@@ -26,9 +26,17 @@ I en klient-rendret React-applikasjon
 
 I dag får dere vite alt dere trenger å vite om klient- og servertilstand. 
 
-Men før vi går i gang, kan alle reise seg? La oss ta en liten avstemning. Hvis du syns det er lett å jobbe med tilstand, sitt ned. Jeg blir stående.
+Men før vi går i gang, kan alle reise seg? La oss ta en liten avstemning. **Bli stående** hvis du syns det er lett å jobbe med tilstand. 
+
+Jeg hadde satt meg ned med dere. 
 
 ... **Avstemning**. 
+
+Dere som står, gratulerer! Dere tar 1 slide hver!
+
+Okay, alle kan sitte nå.
+
+
 
 Tilstandshåndtering i frontend er noe av det **vanskeligste vi gjør**. Du skal håndtere tilstander for alt fra skjemafelter og darkmode til innlogging og andre API-data. 
 
