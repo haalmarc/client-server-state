@@ -1,4 +1,4 @@
-# Syncing
+# Synkronisere mellom klient og server
 
 ````md magic-move {lines: true}
 
@@ -51,7 +51,7 @@ export function ProfileForm() {
 <!-- 
 Dette med at servertilstanden blir endret av andre, gjør at om vi henter data en gang, kan det 2 sekunder senere være utdatert fordi andre har oppdatert dataene.
 
-Dermed er en utfordring i servertilstand å holde dataene oppdatert. TanStack Query lagrer dataene på en cache, og vil ikke i utgangspunktet hente nye data før dataene er regnet som gamle.
+Dermed er en utfordring i servertilstand å holde dataene mellom klient og server oppdatert. TanStack Query lagrer dataene på en cache i klienten, og vil ikke i utgangspunktet hente nye data før dataene er regnet som gamle.
 
 [click] Dette kan du styre med staleTime, som er satt til 5 minutter som standard. Om du ønsker oftere oppdateringer, kan du overstyre. 
 

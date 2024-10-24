@@ -3,7 +3,7 @@ layout: two-cols
 layoutClass: gap-16
 ---
 
-# Du klarer deg med en hammer...
+# Verktøy for servertilstand
 
 <Formexample />
 
@@ -97,16 +97,16 @@ export function ProfileForm() {
 ````
 
 <!--
-Skillet mellom klient- og server-tilstand fører ikke til at du MÅ bruke visse verktøy. Som vi så, kan du implementere alle funksjonalitetene henting av data krever selv. Men det er komplekst og kan bli rotete. Og her har vi ikke snakka om caching en gang.
+Skillet mellom klient- og server-tilstand tvinger deg ikke til å bruke visse verktøy, men som vi har sett kan det bli ganske komplisert og rotete. Og det er uten å ha nevnt caching.
 
-Hva skjer om vi bytter ut vår custom kode med et verktøy som TanStack Query?
+Hva skjer om vi bytter ut vår egen kode med TanStack Query, som er **beregnet** for server-tilstand?
 
 [click] Altså, fikk dere også en sånn god følelse i kroppen nå?
 
-Akkurat for servertilstand, er det veldig vanlig å bruke TanStack Query, og dere skjønner kanskje hvorfor? Vi får mye funksjonalitet ut av boksen, som loading og error i egne tilstander.
+TanStack Query er det mest populære verktøyet for servertilstand, og dere skjønner kanskje hvorfor? Vi får mye funksjonalitet ut av boksen, som data, loading og error i egne tilstander. Det er et verktøy vi bruker i klienten, og som håndterer dataflyten mellom klient og server.
 
-Også okay da, jeg skal gjøre bildet litt ærligere, med litt mer kode. TanStack Query gjør ikke datahenting. 
+Også okay da, jeg skal gjøre bildet litt ærligere, med litt mer kode. TanStack Query gjør ikke selve datahentingen. 
 
-[click] For det har vi definert en fetcher. Men dataene som blir hentet, håndterer TanStack Query i en egen tilstand, lagret på cache-nøkkelen. Dermed, om vi henter dataene fra et annet sted i appen, kan vi bruke den cachede dataen.
+[click] For det har vi definert en fetcher. Og dataene som blir hentet fra serveren, putter TanStack Query i en egen cache på klienten, lagret på en cache-nøkkel. Dermed, om vi henter dataene fra et annet sted i appen, slipper vi å hente dataene på nytt, og kan bruke den cachede dataen.
 
 -->
