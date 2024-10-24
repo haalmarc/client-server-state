@@ -2,14 +2,40 @@
 transition: fade
 ---
 
+<style>
+  .first-column-blurred td:nth-child(1) {
+    opacity: 0.2;
+  }
+
+  .second-column-blurred td:nth-child(2) {
+    opacity: 0.2;
+  }
+</style>
+
 # Klient- vs server-tilstand
 
-| Klient | Server |
-| --- | --- |
-| Klient-eid |  |
-| Bare deg som endrer |  |
-| Flyktig |  |
-| Synkron |  |
+<table class="second-column-blurred">
+  <tr>
+    <th>Klienttilstand</th>
+    <th>Servertilstand</th>
+  </tr>
+  <tr>
+    <td>Klient-eid</td>
+    <td>Server-eid</td>
+  </tr>
+  <tr>
+    <td>Bare deg som endrer</td>
+    <td>Flere som endrer</td>
+  </tr>
+  <tr>
+    <td>Flyktig</td>
+    <td>Lagret over tid</td>
+  </tr>
+  <tr>
+    <td>Synkron</td>
+    <td>Asynkron</td>
+  </tr>
+</table>
 
 <!-- 
 La oss se nærmere på forskjellene.
@@ -29,12 +55,28 @@ transition: fade
 
 # Klient- vs server-tilstand
 
-| Klient | Server |
-| --- | --- |
-|  | Server-eid |
-|  | Flere som endrer |
-|  | Lagret over tid |
-|  | Asynkron |
+<table class="first-column-blurred">
+  <tr>
+    <th>Klienttilstand</th>
+    <th>Servertilstand</th>
+  </tr>
+  <tr>
+    <td>Klient-eid</td>
+    <td>Server-eid</td>
+  </tr>
+  <tr>
+    <td>Bare deg som endrer</td>
+    <td>Flere som endrer</td>
+  </tr>
+  <tr>
+    <td>Flyktig</td>
+    <td>Lagret over tid</td>
+  </tr>
+  <tr>
+    <td>Synkron</td>
+    <td>Asynkron</td>
+  </tr>
+</table>
 
 <!--
 På den andre siden har vi server-tilstand (altså egentlig asynkron tilstand, men oftest er det data som bor på en server et eller annet sted). 
