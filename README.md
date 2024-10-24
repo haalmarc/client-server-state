@@ -34,7 +34,7 @@ OBS. Noen begrensninger med mobil som fjernkontroll, så her er noen tips:
 - For neste slide, sveip inni "Current"-vindu. Pil-knappene frem og tilbake er veldig små, så lett å trykke feil, som tar deg ut av kontroll.
 - Sveip 4 sekunder før du egentlig vil bytte slide. Presentasjonen ser ut til å jevnt svare, men det kan ta litt tid.
 - Av samme grunn, kun sveip én gang. Ellers hoper det seg hopp, og du hopper over mange slides.
-- Om du ønsker å vise interaksjon med komponenter, må du bruke laptop. Tasting og trykking på komponenter ser ikke ut til å fungere på mobil. Det blir vist i mobilen, men ikke i presentasjonen. 
+- Om du ønsker å vise interaksjon med komponenter, må du endre på visningsvinduet. Du må derfor bruke laptop, og endringer i presentation-mode vises ikke i publikumsvisningen.
 
 # Tips
 
