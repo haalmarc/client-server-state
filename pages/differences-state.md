@@ -2,16 +2,6 @@
 transition: fade
 ---
 
-<style>
-  .first-column-blurred td:nth-child(1) {
-    opacity: 0.2;
-  }
-
-  .second-column-blurred td:nth-child(2) {
-    opacity: 0.2;
-  }
-</style>
-
 # Klient- vs server-tilstand
 
 <table class="second-column-blurred">
@@ -91,7 +81,7 @@ På den andre siden har vi server-tilstand (altså egentlig asynkron tilstand, m
 
 # Klient- vs server-tilstand
 
-| Klient | Server |
+| Klienttilstand | Servertilstand |
 | --- | --- |
 | Klient-eid | Server-eid |
 | Bare deg som endrer | Flere som endrer |

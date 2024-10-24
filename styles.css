@@ -1,0 +1,23 @@
+.first-column-blurred td:nth-child(1) {
+  opacity: 0.2;
+}
+
+.first-column-blurred th:nth-child(1) {
+  opacity: 0.4;
+}
+
+.second-column-blurred td:nth-child(2) {
+  opacity: 0.2;
+}
+
+.second-column-blurred th:nth-child(2) {
+  opacity: 0.4;
+}
+
+.third-column-blurred td:nth-child(3) {
+  opacity: 0.2;
+}
+
+.third-column-blurred th:nth-child(3) {
+  opacity: 0.4;
+}
