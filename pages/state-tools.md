@@ -90,7 +90,7 @@ transition: fade
 
 <!--
 
-Det letteste skillet er mellom klient- og servertilstand. React kommer ikke med noen innebygde verktøy for asynkron tilstand, så da faller valget lett på TanStack Query eller useSWR.
+Det letteste skillet er mellom klient- og servertilstand. React kommer ikke med noen innebygde verktøy for asynkron tilstand, så da faller valget på TanStack Query eller useSWR.
 
 -->
 

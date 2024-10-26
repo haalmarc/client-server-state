@@ -159,6 +159,6 @@ Så vil forespørselen bli sendt.
 
 [click] Om forespørselen feiler, ruller vi tilbake til gammel tilstand umiddelbart.
 
-[click] Uansett om forespørselen feiler eller ikke, invaliderer vi cachen, så vi synker klientens servertilstand med serverens faktiske data.
+[click] Uansett om forespørselen feiler eller ikke, invaliderer vi cachen, så vi syncer klientens servertilstand med serverens faktiske data.
 
 -->

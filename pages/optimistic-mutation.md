@@ -11,7 +11,7 @@ layoutClass: gap-16
 
 <ol>
   <v-click><li>Vi endrer server-tilstanden i klienten med en gang</li></v-click>
-  <v-click><li>Vi sender en forespørsel til serveren om å endre tilstand på serveren</li></v-click>
+  <v-click><li>Vi sender en forespørsel til serveren om å endre faktiske data på serveren</li></v-click>
   <v-click>
     <li>Etter forespørselen er fullført: 
       <ul>
